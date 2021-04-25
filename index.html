@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <header>
+
+    <h1 id="title">Formulir Survei Kependudukan<br>Kabupaten Purworejo 2021</h1>
+
+    <p id="description">
+      Formulir survei kependudukan Kabupaten Purworejo tahun 2021
+    </p>
+
+  </header>
+
+  <div class="container">
+
+    <form id="survey-form">
+
+      <div class="form-group">
+
+        <label for="name" id="name-label">Nama</label>
+        <input type="text" id="name" placeholder="Masukkan Nama Anda" required />
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Masukkan Email Anda" required />
+
+        <label for="number" id="number-label">Number</label>
+        <input type="number" id="number" placeholder="Masukkan Umur Anda" min="1" max="99" required />
+
+      </div>
+
+      <div class="form-group">
+
+        <p>
+          Jenis kelamin
+        </p>
+
+        <select name="dropdown" id="dropdown" required>
+          <option value="tes" selected>tes</option>
+          <option value="tes2">tes</option>
+          <option value="tes3">tes</option>
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <p>
+          Kecamatan
+        </p>
+
+        <label>
+          <input
+          name="kecamatan"
+          value="grabag"
+          type="radio"
+          checked
+          />Grabag</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="ngombol"
+          type="radio"
+          />Ngombol</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="bayan"
+          type="radio"
+          />Bayan</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="butuh"
+          type="radio"
+          />Butuh</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="loano"
+          type="radio"
+          />Loano</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="bruno"
+          type="radio"
+          />Bruno</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="banyurip"
+          type="radio"
+          />Banyurip</label>
+        <label>
+          <input
+          name="kecamatan"
+          value="lainlain"
+          type="radio"
+          />Lain-lain</label>
+
+      </div>
+
+      <div class="form-group">
+
+        <p>
+          Alat Elektronik yang sering digunakan
+        </p>
+
+        <label
+          ><input
+          value="televisi"
+          type="checkbox"
+          />Televisi</label>
+        <label
+          ><input
+          value="telepon"
+          type="checkbox"
+          />Telepon</label>
+        <label
+          ><input
+          value="smartphone"
+          type="checkbox"
+          />Smartphone</label>
+        <label
+          ><input
+          value="radio"
+          type="checkbox"
+          />Radio</label>
+        <label
+          ><input
+          value="laptop"
+          type="checkbox"
+          />Laptop</label>
+        <label
+          ><input
+          value="komputer"
+          type="checkbox"
+          />Komputer</label>
+
+      </div>
+
+      <div class="form-group">
+
+        <textarea id="detail" placeholder="Masukkan penjelasan singkat mengenai diri Anda"></textarea>
+
+      </div>
+
+      <button type="submit" id="submit">Kirim</button>
+
+    </form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
